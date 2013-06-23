@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveView Notificaties</string>
+    <string name="tv1">LiveView Notificaties laat ALLE notificatis zien op de LiveView.</string>
+    <string name="tv2">Deze applicatie heeft extra permissie nodig om te kunnen werken.\n(Normale applicaties mogen niet de notificaties die gemaakt zijn door andere applicaties inzien!!)\n\nDaarom moet deze applicatie worden ingesteld als Toegankelijkheids-Service (Accessibility)\n\nDruk op de knop hieronder en schakel LiveView Notificaties in als Toegankelijkheids-Service.\n\n</string>
+    <string name="btn_text">Klik Hier !</string>
+    <string name="failed_message">Kan \'Instellingen\' niet openen..\nJe zal het handmatig moeten doen helaas..\n\nGa naar Instellingen, Toegankelijkheid (Accessibility) en zet \'LiveView Notificaties\' aan.</string>
+    <string name="hint_message">Zet LiveView Notificaties aan a.u.b.</string>
+    <string name="notification">Notificatie</string> 
+    <string name="send_a_notification"> heeft een Notificatie gestuurd!</string>
+    <!-- //-->
+    <string name="accessibility_service_description">LiveView Notificaties Toegankelijkheids-Service beschrijving</string>
+</resources>

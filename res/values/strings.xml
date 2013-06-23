@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LiveView Notifications</string>
+    <string name="tv1">LiveView Notifications redirects ALL the notications to LiveView</string>
+    <string name="tv2">This application needs additional permission to make this work.\n(Normal applications are nog allowed to look at other applications notifications!!)\n\nTherefor this appliction must be approved as Accessibility-Service.\n\nPress the Button below and Enable the LiveView Notifications Accessability Service.\n\n</string>
+    <string name="btn_text">Click here !</string>
+    <string name="failed_message">Failed to open Settings.\nYou have to do it manually.\n\nPlease go to Settings, Accessibility and enable LiveView Notifications.</string>
+    <string name="hint_message">Please enable LiveView Notifications.</string>
+    <string name="notification">Notification</string>
+    <string name="send_a_notification"> send a notification!</string>
+    
+    <!-- //-->
+    <string name="pluginname">LiveView Notifications</string>
+    <string name="intent_preferences">com.sonyericsson.extras.liveview.plugins.livenotifications.PREFERENCES</string>
+    <string name="intent_service">com.sonyericsson.extras.liveview.plugins.livenotifications.livenotificationsservice</string>
+    <string name="application_description">Extends:com.sonyericsson.extras.liveview</string>
+    
+    <!-- //-->
+    <string name="accessibility_service_description">LiveView Notifications Accessibility Service Description</string>
+</resources>
