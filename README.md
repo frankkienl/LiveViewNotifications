@@ -18,7 +18,6 @@ https://play.google.com/store/apps/details?id=nl.frankkie.livenotifications
 
 (Root is not required)
 
-![Screenshot](https://raw.github.com/frankkienl/LiveViewNotifications/master/20130616_182447_croped.jpg "Photo")
-![Screenshot](https://raw.github.com/frankkienl/LiveViewNotifications/master/device-2013-06-16-174045.png "Screenshots")
+![Screenshot](https://raw.github.com/frankkienl/LiveViewNotifications/master/screenshots/device-2013-06-16-174045.png "Screenshots")
 
 Made in NetBeans IDE
