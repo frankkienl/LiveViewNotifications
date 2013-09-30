@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
+1.1:
+Ignore-list
+
 1.0.2:
 fixed not showing up on 4.2, by adding:
 android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
@@ -73,5 +76,7 @@ initial release
             </intent-filter>
         </service>
         <!-- ENDOF Acceability Service //-->
+        
+        <activity android:name=".IgnoreListActivity"/>
     </application>
 </manifest>

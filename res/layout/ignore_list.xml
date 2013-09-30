@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <TextView 
+        android:text="@string/ignore_notifications"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+    />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <Button 
+            android:id="@+id/btn_ignore_add_packagename"
+            android:text="@string/ignore_add_packagename"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+        <Button 
+            android:id="@+id/btn_ignore_add_app"
+            android:text="@string/ignore_add_app"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/ignore_list_container"
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

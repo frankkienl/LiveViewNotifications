@@ -9,6 +9,11 @@
     <string name="notification">Notification</string>
     <string name="send_a_notification"> send a notification!</string>
     
+    <string name="btn_ignore_list_text">Ignore-list</string>
+    <string name="ignore_notifications">Ignore Notifications from certain apps.</string>
+    <string name="ignore_add_packagename">Add packagename</string>
+    <string name="ignore_add_app">Add App</string>
+    
     <!-- //-->
     <string name="pluginname">LiveView Notifications</string>
     <string name="intent_preferences">com.sonyericsson.extras.liveview.plugins.livenotifications.PREFERENCES</string>

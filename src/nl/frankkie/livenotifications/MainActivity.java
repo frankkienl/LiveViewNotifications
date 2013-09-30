@@ -32,6 +32,15 @@ public class MainActivity extends Activity {
                 }
             }
         });
+        
+        findViewById(R.id.btn_ignore_list).setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View arg0) {
+                Intent i = new Intent();
+                i.setClass(MainActivity.this, IgnoreListActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
     public void failed() {

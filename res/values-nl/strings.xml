@@ -8,6 +8,12 @@
     <string name="hint_message">Zet LiveView Notificaties aan a.u.b.</string>
     <string name="notification">Notificatie</string> 
     <string name="send_a_notification"> heeft een Notificatie gestuurd!</string>
+    
+    <string name="btn_ignore_list_text">Negeren-lijst</string>
+    <string name="ignore_notifications">Notificaties negeren van bepaalde apps.</string>
+    <string name="ignore_add_packagename">Packagename toevoegen</string>
+    <string name="ignore_add_app">App toevoegen</string>
+    
     <!-- //-->
     <string name="accessibility_service_description">LiveView Notificaties Toegankelijkheids-Service beschrijving</string>
 </resources>
