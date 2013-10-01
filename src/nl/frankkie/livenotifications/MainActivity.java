@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import nl.wotuu.database.DatabaseOpenHelper;
 
 public class MainActivity extends Activity {
 
@@ -17,6 +18,7 @@ public class MainActivity extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        DatabaseOpenHelper.createInstance(this);
         setContentView(R.layout.main);
 
         Button btn = (Button) findViewById(R.id.btn);

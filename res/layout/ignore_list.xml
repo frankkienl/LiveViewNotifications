@@ -15,12 +15,14 @@
         <Button 
             android:id="@+id/btn_ignore_add_packagename"
             android:text="@string/ignore_add_packagename"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
         <Button 
             android:id="@+id/btn_ignore_add_app"
             android:text="@string/ignore_add_app"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
             android:layout_height="wrap_content"/>
     </LinearLayout>
     <ScrollView

@@ -13,6 +13,7 @@
     <string name="ignore_notifications">Notificaties negeren van bepaalde apps.</string>
     <string name="ignore_add_packagename">Packagename toevoegen</string>
     <string name="ignore_add_app">App toevoegen</string>
+    <string name="ignore_delete">Verwijderen</string>
     
     <!-- //-->
     <string name="accessibility_service_description">LiveView Notificaties Toegankelijkheids-Service beschrijving</string>
