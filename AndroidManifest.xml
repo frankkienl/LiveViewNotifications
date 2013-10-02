@@ -2,6 +2,7 @@
 <!--
 1.1:
 Ignore-list
+Tries to get text from notification
 
 1.0.2:
 fixed not showing up on 4.2, by adding:
