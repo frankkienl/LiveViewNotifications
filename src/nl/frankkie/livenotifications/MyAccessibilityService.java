@@ -10,8 +10,6 @@ import android.widget.RemoteViews;
 import com.sonyericsson.extras.liveview.plugins.livenotifications.LiveNotificationsService;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import nl.wotuu.database.DatabaseOpenHelper;

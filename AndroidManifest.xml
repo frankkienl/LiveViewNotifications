@@ -18,8 +18,8 @@ initial release
 //-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="nl.frankkie.livenotifications"
-          android:versionCode="3"
-          android:versionName="1.0.2">
+          android:versionCode="4"
+          android:versionName="1.1">
     <supports-screens android:resizeable="true"
                       android:smallScreens="true"
                       android:normalScreens="true"
