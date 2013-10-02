@@ -62,11 +62,11 @@ public class MyAccessibilityService extends AccessibilityService {
 
     public String getNotificationText(AccessibilityEvent event) {
         //http://stackoverflow.com/questions/9292032/extract-notification-text-from-parcelable-contentview-or-contentintent
+        String answer = "";
         try {
             Notification notification = (Notification) event.getParcelableData();
             RemoteViews views = notification.contentView;
             Class secretClass = views.getClass();
-            Map<Integer, String> text = new HashMap<Integer, String>();
 
             Field outerFields[] = secretClass.getDeclaredFields();
             for (int i = 0; i < outerFields.length; i++) {
@@ -76,38 +76,27 @@ public class MyAccessibilityService extends AccessibilityService {
 
                 outerFields[i].setAccessible(true);
 
-                ArrayList<Object> actions = (ArrayList<Object>) outerFields[i]
-                        .get(views);
+                ArrayList<Object> actions =
+                        (ArrayList<Object>) outerFields[i].get(views);
                 for (Object action : actions) {
                     Field innerFields[] = action.getClass().getDeclaredFields();
 
                     Object value = null;
-                    Integer type = null;
-                    Integer viewId = null;
+                    String methodName = null;
                     for (Field field : innerFields) {
                         field.setAccessible(true);
                         if (field.getName().equals("value")) {
                             value = field.get(action);
-                        } else if (field.getName().equals("type")) {
-                            type = field.getInt(action);
-                        } else if (field.getName().equals("viewId")) {
-                            viewId = field.getInt(action);
+                        } else if (field.getName().equals("methodName")) {
+                            methodName = field.get(action).toString();
                         }
                     }
-
-                    if (type == 9 || type == 10) {
-                        text.put(viewId, value.toString());
+                    if (methodName.equals("setText")) {
+                        if (!value.toString().equals("")) {
+                            answer += value.toString() + "\n";
+                        }
                     }
                 }
-
-                //System.out.println("title is: " + text.get(16908310));
-                //System.out.println("info is: " + text.get(16909082));
-                //System.out.println("text is: " + text.get(16908358));
-                String answer = 
-                        ((text.get(16908310)==null)?"":text.get(16908310)+ "\n")                         
-                        + ((text.get(16909082)==null)?"":text.get(16909082)+ "\n")                         
-                        + ((text.get(16908358)==null)?"":text.get(16908358));
-                Log.v("LiveViewNotifications", answer);
                 return answer;
             }
         } catch (Exception e) {
